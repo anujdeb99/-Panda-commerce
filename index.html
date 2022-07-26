@@ -12,7 +12,7 @@
 </head>
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
             <div class="container">
             <img src="images/logo.png" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +24,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                 </li>
                 </ul>
             </div>
@@ -127,7 +127,7 @@
             </div>
         </section>
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h1 class="mb-3">Shoes</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col">
@@ -173,14 +173,14 @@
         </section>
         <!-- shoes section end -->
         <!-- backpack section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h1 class="mb-3">Backpack</h1>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                 <div class="col">
                 <div class="card h-100 border border-0 shadow-lg">
                     <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                    <h4 class="card-title fw-bold text-danger">Ison Backpack</h4>
+                    <h4 class="card-title fw-bold">Ison Backpack</h4>
                     <p class="card-text">Amet minim mollit non deserunt ullamco 
                         est sit aliqua dolor do amet sint. 
                     </p>
@@ -193,7 +193,7 @@
                 <div class="card h-100 border border-0 shadow-lg">
                     <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                     <div class="card-body text-center">
-                    <h4 class="card-title fw-bold text-info">Biaowang Backpack</h4>
+                    <h4 class="card-title fw-bold">Biaowang Backpack</h4>
                     <p class="card-text">Amet minim mollit non deserunt ullamco 
                         est sit aliqua dolor do amet sint. 
                     </p>
@@ -218,7 +218,26 @@
             </div>
         </section>
         <!-- backpack section start -->
+        <!-- subscribe section start -->
+        <div style="height: 320px;" class="container d-flex  justify-content-center align-items-center bg-info" id="subscribe">
+            <div>
+                <h2>LET'S STAY IN TOUCH</h2>
+                <p>Get updates on sales specials and more</p>
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter your email" aria-describedby="emailHelp">
+                    </div>
+                    <div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
+    <footer class="mt-5 text-center">
+        <p> © Copyrigh 2022 Panda Commerce. All rights reserved. Panda Commerce.com</p>
+    </footer>
     <script src="bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
